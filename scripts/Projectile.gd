@@ -8,4 +8,7 @@ func _ready():
 func _on_Timer_timeout():
 	position.y -= moveAmount
 	$Timer.start(GlobalTimer.beat/4)
-	
+func _on_Projectile_area_entered(area):
+	if area.name == "Enemy":
+		area.queue_free()
+		queue_free()	
