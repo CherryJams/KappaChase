@@ -4,6 +4,7 @@ export var speed = 400;
 var screen_size 
 func _ready():
 	screen_size = get_viewport_rect().size
+	$AnimatedSprite.play()
 	
 func _process(delta):
 	var velocity = Vector2.ZERO
