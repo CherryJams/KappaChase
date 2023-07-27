@@ -1,10 +1,15 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Enemy.tscn" type="PackedScene" id=2]
 [ext_resource path="res://music/Japanese Fantasy Music - Honō no Megami (炎の女神) [Ix6aZ6q8aBc].wav" type="AudioStream" id=3]
 [ext_resource path="res://scripts/Main.gd" type="Script" id=4]
 [ext_resource path="res://scenes/Projectile.tscn" type="PackedScene" id=5]
+
+[sub_resource type="Curve2D" id=1]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 192, 0, 0, 0, 0, 0, 384, 0, 0, 0, 0, 0, 576, 0, 0, 0, 0, 0, 768, 0, 0, 0, 0, 0, 960, 0, 0, 0, 0, 0, 1144, 0, 0, 0, 0, 0, 1336, 0, 0, 0, 0, 0, 1528, 0, 0, 0, 0, 0, 1728, 0, 0, 0, 0, 0, 192, 0 )
+}
 
 [node name="Main" type="Node"]
 script = ExtResource( 4 )
@@ -22,3 +27,8 @@ position = Vector2( 960, 749 )
 [node name="Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
 volume_db = -14.857
+
+[node name="EnemyPath" type="Path2D" parent="."]
+curve = SubResource( 1 )
+
+[node name="EnemyTimer" type="Timer" parent="."]
