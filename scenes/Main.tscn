@@ -16,7 +16,6 @@ script = ExtResource( 4 )
 
 [node name="Enemy" parent="." instance=ExtResource( 2 )]
 position = Vector2( 960, 180 )
-scale = Vector2( 7.88, 7.88 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 960, 920 )
