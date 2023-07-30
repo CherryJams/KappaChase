@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/kappa0000.png-6527b40d095a0dad9019c955a2ff4968.stex"
+path="res://.import/aiko0000.png-8977bbaffc2a2bc55deb43d8cc345a5a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/characters/kappa/kappa0000.png"
-dest_files=[ "res://.import/kappa0000.png-6527b40d095a0dad9019c955a2ff4968.stex" ]
+source_file="res://sprites/characters/kappa/aiko0000.png"
+dest_files=[ "res://.import/aiko0000.png-8977bbaffc2a2bc55deb43d8cc345a5a.stex" ]
 
 [params]
 
